@@ -1,10 +1,7 @@
 import java.util.Scanner;
 
-public class method {
-    void hitung(){
-
-    }
-    /*static void bfp() {
+public class bodyfat extends method{
+    void hitung() {
         Scanner s = new Scanner(System.in);
         double bb;
         double tb;
@@ -18,16 +15,15 @@ public class method {
         bb = math1.nextDouble();
         System.out.print("Tinggi badan : ");
         tb = math1.nextDouble();
+        /*
 
+         */
         System.out.print("BMI : ");
         bmi = s.nextDouble();
         c = (1.20*bmi+ 0.23*age-16.2)*100;
         System.out.println ("The total value is " +c);
         System.out.print("Masukkan pilihan anda : ");
-    }
 
-    static void ibw() {
 
     }
-     */
 }

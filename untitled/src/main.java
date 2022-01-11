@@ -1,8 +1,14 @@
 import java.util.Scanner; //Get User inpurt
-public class main extends method {
+
+
+public class main{
     public static void main(String[] args) {
+        method m = new method();
+        method bmi = new bodymassindex();
+        method bf = new bodyfat();
+        method idw = new idealw();
         Scanner input = new Scanner(System.in);
-        System.out.println("Fitculator");
+        System.out.println("Fitculator \n");
         System.out.println("1. Body Mass Index(BMI)");
         System.out.println("2. Body Fat Percentage");
         System.out.println("3. Berat Badan Ideal");
@@ -13,13 +19,13 @@ public class main extends method {
         choice = input.nextInt();
             switch (choice) {
                 case 1:
-                    addition();
+                    bmi.hitung();
                     break;
                 case 2:
-                    substraction();
+                    bf.hitung();
                     break;
                 case 3:
-                    multiplication();
+                    idw.hitung();
                     break;
                 case 4:
                     System.exit(choice);
