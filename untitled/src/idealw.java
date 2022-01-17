@@ -16,10 +16,12 @@ public class idealw extends method{
         tb = s.nextDouble();
         resl=(tb - 100) - (tb - 100) * 0.1;
         resp=(tb - 100) - (tb - 100) * 0.15;
+        double dataIdealWeight[] = {tb,resl,resp};
         if(jk==1){
-            System.out.println("Berat badan ideal anda "+resl);
+            System.out.println("Tinggi badan anda "+dataIdealWeight[0]);
+            System.out.println("Berat badan ideal anda "+dataIdealWeight[1]);
         }else{
-            System.out.println("Berat badan ideal anda "+resp);
+            System.out.println("Berat badan ideal anda "+dataIdealWeight[2]);
         }
         System.out.print("Masukkan pilihan anda : ");
     }

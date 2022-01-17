@@ -1,5 +1,5 @@
-import java.util.Scanner; //Get User inpurt
-
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class main{
     public static void main(String[] args) {
@@ -8,15 +8,16 @@ public class main{
         method bf = new bodyfat();
         method idw = new idealw();
         Scanner input = new Scanner(System.in);
-        System.out.println("Fitculator \n");
-        System.out.println("1. Body Mass Index(BMI)");
-        System.out.println("2. Body Fat Percentage");
-        System.out.println("3. Berat Badan Ideal");
-        System.out.println("4. Keluar");
-        System.out.print("Masukkan pilihan anda :");
+
+        m.hitung();
         int choice = 0;
-        while (choice != 4) {
-        choice = input.nextInt();
+        try {
+            choice = input.nextInt();
+        }catch(InputMismatchException e){
+            System.out.println("Invalid Input");
+
+        }
+            while (choice != 4) {
             switch (choice) {
                 case 1:
                     bmi.hitung();
@@ -29,8 +30,14 @@ public class main{
                     break;
                 case 4:
                     System.exit(choice);
+                default:
+                    System.out.println("Invalid Input");
+                    System.out.println("Masukkan pilihan anda : ");
+                    input.nextInt();
             }
+
+        }
         }
     }
-}
+
 

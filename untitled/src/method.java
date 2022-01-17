@@ -2,32 +2,15 @@ import java.util.Scanner;
 
 public class method {
     void hitung(){
-
-    }
-    /*static void bfp() {
-        Scanner s = new Scanner(System.in);
-        double bb;
-        double tb;
-        double bmi;
-        double age;
-        double c;
-        System.out.println("Body Fat Percentage :");
-        System.out.print("Umur : ");
-        age = s.nextDouble();
-        /*System.out.print("Berat Badan : ");
-        bb = math1.nextDouble();
-        System.out.print("Tinggi badan : ");
-        tb = math1.nextDouble();
-
-        System.out.print("BMI : ");
-        bmi = s.nextDouble();
-        c = (1.20*bmi+ 0.23*age-16.2)*100;
-        System.out.println ("The total value is " +c);
-        System.out.print("Masukkan pilihan anda : ");
+        System.out.print("=================");
+        System.out.println("\n \tFitculator");
+        System.out.print("=================\n");
+        System.out.println("Aplikasi kalkulator kesehatan untuk menghitung : ");
+        System.out.println("1. Body Mass Index(BMI)");
+        System.out.println("2. Body Fat Percentage");
+        System.out.println("3. Berat Badan Ideal");
+        System.out.println("4. Keluar");
+        System.out.print("Masukkan pilihan anda :");
     }
 
-    static void ibw() {
-
-    }
-     */
 }

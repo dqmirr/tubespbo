@@ -17,7 +17,11 @@ public class bodymassindex extends method{
         System.out.print("Tinggi Badan(m) : ");
         tb = s.nextDouble();
         res = bb/(tb*tb);
-        System.out.println ("BMI anda adalah " + res);
+
+        double dataBMI[] = {tb, bb, res};
+        System.out.println("Tinggi badan anda : "+dataBMI[0]);
+        System.out.println("Berat badan anda : "+dataBMI[1]);
+        System.out.println ("BMI anda adalah " + dataBMI[2]);
         System.out.print("Masukkan pilihan anda :");
     }
 }
